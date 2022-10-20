@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script>
+    <script src="./scripts.js" defer></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h4 class="title is-6">Регистрация</h4>
+            <section class="section">
+                <div class="users">
+                    <h4 class="title is-6">Вы регистрируетесь как</h4>
+                    <div>
+                        <label class="radio bold">
+                            <input type="radio" name="answer" id="buyer">
+                            <label class="title is-size-6"> Покупатель</label>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="radio bold">
+                            <input type="radio" name="answer" id="seller">
+                            <label class="title is-size-6"> Продавец</label>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field column is-two-thirds">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-small">
+                            <label class="label" for="e-mail">Эл.почта</label>
+                        </div>
+                        <div class="field-body is-half">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-small" type="text" placeholder="" id="e-mail">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="title is-6">Название организации</h4>
+
+                <div class="field column is-two-thirds">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-small">
+                            <label class="label" for="form">ИП или Юр.лицо</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-small" type="text" placeholder="" id="form">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field column is-two-thirds">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-small">
+                            <label class="label" for="inn">ИНН</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-small" type="text" placeholder="" id="inn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="title is-6">Фактический адрес</h4>
+
+                <div class="field column is-two-thirds ">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-small ">
+                            <label class="label" for="city">Ваш город</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-small" type="text" placeholder="" id="city">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="columns   ">
+                        <div class="field is-horizontal column is-6 is-offset-1 ">
+                            <div class="field-label is-small">
+                                <label class="label" for="street">Улица</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="input is-small" type="text" placeholder="" id="street">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal column is-6 ">
+                            <div class="field-label is-small">
+                                <label class="label" for="house">Дом/стр.</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="input is-small" type="text" placeholder="" id="house">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-horizontal column is-2 ">
+                            <div class="field-label is-small">
+                                <label class="label" for="office">Офис</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="input is-small" type="text" placeholder="" id="office">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="field column is-two-thirds">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-small">
+                            <label class="label">Телефон</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field is-expanded">
+                                <div class="field has-addons">
+                                    <p class="control">
+                                        <a class="button is-static is-small">
+                                            +7
+                                        </a>
+                                    </p>
+                                    <div class="control is-expanded">
+                                        <input class="input is-small" type="tel">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="field column is-two-thirds" id="site">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-small">
+                            <label class="label">Сайт вашей компании</label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-small" type="text" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="title is-6">Виды деятельности</h4>
+
+
+                <div class="column">
+
+                    <div class="field column is-three-fifths">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-small">
+                                <label class="checkbox" for="market">
+                                    Магазин
+                                </label>
+                            </div>
+                            <div class="field-body is-half">
+
+                                <input type="checkbox" id="market">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field column is-three-fifths">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-small">
+                                <label class="checkbox" for="Region market">
+                                    Региональная сеть магазинов
+                                </label>
+                            </div>
+                            <div class="field-body is-half">
+
+                                <input type="checkbox" id="Region market">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field column is-three-fifths">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-small">
+                                <label class="checkbox" for="Federation market">
+                                    Федеральная сеть магазинов
+                                </label>
+                            </div>
+                            <div class="field-body is-half">
+
+                                <input type="checkbox" id="Federation market">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field column is-three-fifths">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-small">
+                                <label class="checkbox" for="intertnet-market">
+                                    Интернет-магазин
+                                </label>
+                            </div>
+                            <div class="field-body is-half">
+
+                                <input type="checkbox" id="intertnet-market">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field column is-three-fifths">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-small">
+                                <label class="checkbox" for="Autoservice">
+                                    Автосервис
+                                </label>
+                            </div>
+                            <div class="field-body is-half">
+
+                                <input type="checkbox" id="Autoservice">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field column is-two-thirds" id="site">
+                    <div class="field is-horizontal">
+                        <div class="field-label is-small">
+                            <label class="label"></label>
+                        </div>
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <div class="g-recaptcha" data-sitekey="6LfgRJciAAAAAH9Kp-ml03pPLDpzaayFyQZ7R7XM">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-link" type="submit" id="submitButton">Отправить заявку</button>
+                    </div>
+                </div>
+
+            </section>
+        </form>
+    </div>
+</body>

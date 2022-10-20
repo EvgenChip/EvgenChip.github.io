@@ -1,0 +1,20 @@
+
+.container{
+    padding: 0px 30px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+.section {
+    padding: 0px 40px;
+}
+
+.users {
+    padding: 0px 40px;
+}
