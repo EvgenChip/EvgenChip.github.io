@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Diagram</title>
+    <meta name="description" content="Шаблон HTML5 для любого проекта" />
+    <meta name="author" content="Кодер" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://кодер.укр/" />
+    <meta property="og:description" content="Шаблон HTML5 для любого проекта" />
+    <meta property="og:image" content="image.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="diagram">
+        <div class="diagram__circle">
+          <svg class="svg">
+            <circle
+              class="circle_0"
+              cx="170"
+              cy="170"
+              r="150"
+              width="350"
+              height="350"
+            ></circle>
+            <circle
+              class="circle_1"
+              cx="170"
+              cy="170"
+              r="150"
+              width="350"
+              height="350"
+            ></circle>
+            <circle
+              class="circle_2"
+              cx="170"
+              cy="170"
+              r="150"
+              width="350"
+              height="350"
+            ></circle>
+            <circle
+              class="circle_3"
+              cx="170"
+              cy="170"
+              r="150"
+              width="350"
+              height="350"
+            ></circle>
+          </svg>
+          <div class="diagram__circle_inner">
+            <img src="./img/loyalty.svg" alt="" />
+            <div class="diagram_circle__index">
+              <p>72.</p>
+              <span>
+                <p>%</p>
+                <p>7</p>
+              </span>
+            </div>
+            <div class="diagram_circle__index_text">
+              <h3>Лояльность</h3>
+              <p>Ниже среднего</p>
+              <span
+                >По отрасли: FMCG <br />
+                значений слева от медианы <br />
+                52.0%-83.1</span
+              >
+            </div>
+            <div class="diagram_circle__index_polygon">
+              <svg class="polygon_wrapper">
+                <polygon points="10 ,10 1,20 20,20" fill="green"></polygon>
+              </svg>
+              <span>3.1</span>
+            </div>
+          </div>
+          <svg class="diagram_circle__wrap_wood">
+            <rect class="diagram_circle_wood_line" x="2" y="2" rx="2" />
+          </svg>
+        </div>
+        <div class="diagram__members">
+          <div class="diagram__member">
+            <svg class="diagram__member_wood_line_active">
+              <line x1="1" y1="1" x2="18" y2="1" stroke="#9c9c9b" />
+            </svg>
+            <span>Промоутеры</span>
+            <div class="diagram__member_amount">
+              <span>37%</span>
+              <div class="member_amount_icon">
+                <span>81</span>
+                <img src="./img/human_full.svg" alt="" />
+              </div>
+            </div>
+            <div class="promotes__progress_bar">
+              <svg class="progress_bar">
+                <rect
+                  class="rect_fon"
+                  width="90"
+                  height="29"
+                  y="5"
+                  x="5"
+                  rx="2"
+                  ry="2"
+                ></rect>
+                <rect
+                  class="rect_promoters"
+                  width="0"
+                  height="28"
+                  y="5"
+                  x="5.5"
+                  rx="2"
+                  ry="2"
+                ></rect>
+                <rect
+                  class="rect_phone_human"
+                  width="54"
+                  height="7.5"
+                  fill="#F9F9F9"
+                  y="26"
+                  x="5.5"
+                ></rect>
+                <rect
+                  class="rect_human_promoters"
+                  width="0"
+                  height="7.5"
+                  fill="#B5D0A2"
+                  y="26"
+                  x="5.5"
+                ></rect>
+              </svg>
+            </div>
+            <span class="diagram__member_index">+1.2%</span>
+          </div>
+          <div class="diagram__member">
+            <svg class="diagram__member_wood_plus">
+              <line x1="1" y1="7.5" x2="15" y2="7.5" stroke="#9c9c9b"></line>
+              <line x1="7.5" y1="1" x2="7.5" y2="15" stroke="#9c9c9b"></line>
+            </svg>
+            <svg class="diagram__member_wood_wrap">
+              <rect class="wood_line" x="1" y="-2" rx="3"></rect>
+            </svg>
+
+            <span>Скептики</span>
+            <div class="diagram__member_amount">
+              <span>39.1%</span>
+              <div class="member_amount_icon">
+                <span>8</span>
+                <img src="./img/human_full.svg" alt="" />
+              </div>
+            </div>
+            <div class="skeptics__progress_bar">
+              <svg class="progress_bar">
+                <rect
+                  class="rect_fon"
+                  width="90"
+                  height="29"
+                  y="5"
+                  x="5"
+                  rx="2"
+                  ry="2"
+                ></rect>
+                <rect
+                  class="rect_skeptics"
+                  width="0"
+                  height="28"
+                  y="5"
+                  x="5.5"
+                  rx="2"
+                  ry="2"
+                ></rect>
+                <rect
+                  class="rect_phone_human"
+                  width="54"
+                  height="7.5"
+                  fill="#F9F9F9"
+                  y="26"
+                  x="5.5"
+                ></rect>
+                <rect
+                  class="rect_human_skeptics"
+                  width="0"
+                  height="7.5"
+                  fill="#B5D0A2"
+                  y="26"
+                  x="5.5"
+                ></rect>
+              </svg>
+            </div>
+            <span class="diagram__member_index">+4.8%</span>
+          </div>
+          <div class="diagram__member">
+            <span>Критики</span>
+            <div class="diagram__member_amount">
+              <span>25%</span>
+              <div class="member_amount_icon">
+                <span>7</span>
+                <img src="./img/human_full.svg" alt="" />
+              </div>
+            </div>
+            <div class="critics__progress_bar">
+              <svg class="progress_bar">
+                <rect
+                  class="rect_fon"
+                  width="90"
+                  height="29"
+                  y="5"
+                  x="5"
+                  rx="2"
+                  ry="2"
+                ></rect>
+                <rect
+                  class="rect_critics"
+                  width="0"
+                  height="28"
+                  y="5"
+                  x="5.5"
+                  rx="2"
+                  ry="2"
+                ></rect>
+                <rect
+                  class="rect_phone_human"
+                  width="54"
+                  height="7.5"
+                  fill="#F9F9F9"
+                  y="26"
+                  x="5.5"
+                ></rect>
+                <rect
+                  class="rect_human_critics"
+                  width="0"
+                  height="7.5"
+                  fill="#B5D0A2"
+                  y="26"
+                  x="5.5"
+                ></rect>
+              </svg>
+            </div>
+            <span class="diagram__member_index">-9.7%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

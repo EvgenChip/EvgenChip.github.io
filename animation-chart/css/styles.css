@@ -1,0 +1,346 @@
+@font-face {
+  font-family: "Gotham Pro Regular";
+  src: url("GothamPro.eot");
+  src: url("GothamPro.eot?#iefix") format("embedded-opentype"),
+    url("GothamPro.woff") format("woff"),
+    url("GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arial Regular";
+  src: url("ArialMT.eot");
+  src: url("ArialMT.eot?#iefix") format("embedded-opentype"),
+    url("ArialMT.woff") format("woff"), url("ArialMT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+}
+
+body {
+  padding-top: 50px;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #3333, #5a5454);
+}
+
+h1 {
+  font-family: "Gotham Pro Regular";
+  color: #555555;
+}
+
+.svg {
+  transform: rotate(286deg);
+  position: relative;
+  padding-top: 20px;
+  width: 350px;
+  height: 350px;
+}
+
+.circle_0 {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: rgb(225, 225, 213);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 942;
+  stroke-dashoffset: 92;
+}
+
+.circle_1 {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: rgb(232, 10, 25);
+  stroke-width: 9;
+  stroke-linecap: round;
+  stroke-dasharray: 942;
+  stroke-dashoffset: 942;
+  animation: circle1 4s infinite;
+}
+
+.circle_2 {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: rgb(4, 189, 75);
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 942;
+  stroke-dashoffset: 942;
+  animation: circle2 4s infinite;
+}
+.circle_3 {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: rgb(250, 204, 18);
+  stroke-width: 11;
+  stroke-linecap: round;
+  stroke-dasharray: 942;
+  stroke-dashoffset: 942;
+  animation: circle3 4s infinite;
+}
+
+.container {
+  position: relative;
+  max-width: 960px;
+  display: flex;
+  justify-content: space-around;
+}
+.diagram {
+  position: relative;
+  width: 400px;
+  height: 650px;
+  background: #fff;
+  text-align: center;
+}
+.diagram__circle {
+  position: relative;
+  padding-top: 22px;
+}
+.diagram__circle_inner {
+  position: absolute;
+  margin-left: 123px;
+  margin-top: -350px;
+}
+
+.diagram_circle__index {
+  color: #555555;
+  font-size: 55px;
+  font-family: Arial;
+  padding-top: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.diagram_circle__index span {
+  font-size: 20px;
+}
+
+.diagram_circle__index_text {
+  font-family: Arial;
+  color: #555555;
+}
+.diagram_circle__index_text h3 {
+  font-size: 28px;
+}
+.diagram_circle__index_text p {
+  font-size: 20px;
+  padding-top: 7px;
+  color: #fbd229;
+  font-weight: 600;
+  padding-bottom: 2px;
+}
+
+.diagram_circle__index_text span {
+  color: #beb2b2;
+  font-size: 12px;
+  font-weight: 600;
+}
+.diagram_circle__index_polygon {
+  color: #70a74b;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+.polygon_wrapper {
+  width: 20px;
+  height: 20px;
+}
+.polygon {
+  stroke-linecap: round;
+}
+
+.diagram_circle__wrap_wood {
+  position: absolute;
+  width: 10px;
+  height: 315px;
+  margin-left: -342px;
+  margin-top: 176px;
+}
+.diagram_circle_wood_line {
+  width: 10px;
+  height: 315px;
+  fill: none;
+  stroke: #9c9c9b;
+}
+
+.diagram__members {
+  padding-top: 100px;
+  text-align: initial;
+  padding-left: 45px;
+  font-family: "Gotham Pro Regular";
+  font-weight: 600;
+}
+.diagram__member {
+  position: relative;
+  display: grid;
+  padding-left: 38px;
+  grid-template-columns: 107px 1fr 1fr;
+}
+.diagram__member span {
+}
+
+.diagram__member_wood_line_active {
+  position: absolute;
+  margin-left: -10px;
+  margin-top: 12px;
+  width: 18px;
+  height: 5px;
+}
+
+.diagram__member_wood_plus {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-left: -18px;
+  margin-top: -12px;
+}
+
+.diagram__member_wood_wrap {
+  width: 9px;
+  height: 20px;
+  position: absolute;
+  margin-left: -11px;
+  margin-top: 7px;
+}
+.wood_line {
+  width: 10px;
+  height: 16px;
+  fill: none;
+  stroke: #9c9c9b;
+}
+
+.diagram__member_index {
+  position: absolute;
+  color: #9c9c9b;
+  font-size: 14px;
+  margin-left: 254px;
+  margin-top: 15px;
+}
+
+.diagram__member_amount {
+  padding-left: 15px;
+  text-align: center;
+}
+
+.member_amount_icon {
+  padding-top: 4px;
+  font-size: 14px;
+  color: #9c9c9b;
+}
+
+.member_amount_icon img {
+  height: 13px;
+  color: #9d9d9c;
+}
+
+.progress_bar {
+  width: 148px;
+  height: 50px;
+}
+.rect_fon {
+  fill: #f9f9f9;
+
+  stroke-width: 1;
+  stroke: #ececec;
+  stroke-linecap: round;
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+}
+.rect_promoters {
+  fill: #70a74b;
+
+  animation: rect_promoters 4s infinite;
+}
+
+.rect_skeptics {
+  fill: #fbd229;
+  animation: rect_skeptics 4s infinite;
+}
+
+.rect_critics {
+  fill: #ed5243;
+  animation: rect_critics 4s infinite;
+}
+
+.rect_human_promoters {
+  animation: human_promoters 4s infinite;
+}
+
+.rect_human_skeptics {
+  fill: #fae691;
+  animation: human_skeptics 4s infinite;
+}
+
+.rect_human_critics {
+  fill: #f2a59d;
+  animation: human_critics 4s infinite;
+}
+
+@keyframes circle1 {
+  100% {
+    stroke-dashoffset: 90;
+  }
+}
+
+@keyframes circle2 {
+  100% {
+    stroke-dashoffset: 280;
+  }
+}
+@keyframes circle3 {
+  100% {
+    stroke-dashoffset: 500;
+  }
+}
+@keyframes rect_promoters {
+  100% {
+    width: 30px;
+  }
+}
+
+@keyframes human_promoters {
+  100% {
+    width: 26px;
+  }
+}
+
+@keyframes rect_skeptics {
+  100% {
+    width: 30px;
+  }
+}
+
+@keyframes human_skeptics {
+  100% {
+    width: 25px;
+  }
+}
+
+@keyframes rect_critics {
+  100% {
+    width: 20px;
+  }
+}
+@keyframes human_critics {
+  100% {
+    width: 25px;
+  }
+}
