@@ -1,0 +1,426 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+}
+
+@font-face {
+  font-family: "Euclid Circular";
+  src: local("Euclid Circular Regular"), local("Euclid-Circular-Regular"),
+    url("EuclidCircularA-Regular.woff2") format("woff2"),
+    url("EuclidCircularA-Regular.woff") format("woff"),
+    url("EuclidCircularA-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+span {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: #29374e;
+}
+i {
+  font-family: "Euclid Circular";
+  font-weight: 300;
+}
+
+h1 {
+  font-family: "Euclid-Circular-Regular";
+}
+p {
+  font-family: "Euclid-Circular-Regular";
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.fin_kit {
+}
+.order_demo {
+  background: #cbecff;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 60px 60px 60px 60px;
+}
+.languages {
+  position: relative;
+  gap: 15px;
+  z-index: 1;
+  text-align: right;
+}
+.languages_ru {
+  width: 26px;
+  height: 24px;
+  color: blue;
+  border: transparent;
+  background: #ffffff;
+  border-radius: 12px;
+
+  justify-content: center;
+  align-items: center;
+  padding-right: 3px;
+}
+.languages_ru:hover {
+  cursor: pointer;
+}
+.languages_en {
+  width: 26px;
+  height: 24px;
+  border: transparent;
+  background: none;
+  cursor: pointer;
+}
+.languages_en:hover {
+  color: blue;
+  border: transparent;
+  border-radius: 12px;
+  width: 26px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.25);
+}
+.order_demo_wrap {
+  width: 100%;
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+}
+
+.order_demo__inner {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 130%;
+}
+.order_demo__inner p {
+  padding-right: 83px;
+  padding-bottom: 38px;
+}
+
+.phone {
+  position: relative;
+  z-index: 0;
+  width: 740.33px;
+  height: 684.81px;
+  margin-right: -200px;
+  margin-top: -61px;
+}
+.inner__title {
+  padding-top: 30px;
+  gap: 3px;
+  display: flex;
+}
+
+.title_right {
+  padding-left: 12px;
+  padding-right: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  color: #0962e8;
+  background: #ffffff;
+  border-radius: 20px;
+}
+.title_left {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+}
+
+.order_button {
+  font-family: "Euclid Circular A";
+  color: #ffffff;
+  background: #0962e8;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  padding: 14px 30px 14px 30px;
+  cursor: pointer;
+  opacity: 1;
+  border: transparent;
+}
+.order_button:hover {
+  opacity: 0.6;
+}
+.icon-cog-outline {
+  padding-left: 10px;
+}
+
+.advantage {
+  margin-top: -159px;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.advantage__inner {
+  width: 100%;
+  padding: 22px 20px 30px 20px;
+  background: #ffffff;
+  box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantage__inner p {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+.products {
+  padding-top: 115px;
+}
+.porducts__title {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 130%;
+  text-align: center;
+}
+.porducts__title span {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 57px;
+  line-height: 130%;
+  color: #0962e8;
+}
+.products__content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.products__content_inner {
+  background: #e9f6ff;
+  border-radius: 30px;
+  display: flex;
+  gap: 23px;
+  justify-content: space-between;
+  padding: 37px 20px 0px 30px;
+}
+
+.value_for_client {
+  padding-top: 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.value_for_client__context p {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #1e2837;
+  padding-top: 21px;
+  padding-bottom: 37px;
+}
+
+.context_title {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 130%;
+}
+.context_title span {
+  font-family: "Euclid Circular A";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 130%;
+  color: #0962e8;
+}
+
+.value_for_client__icon_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 21px;
+  column-gap: 19px;
+}
+
+.value_for_client__icon {
+  padding: 16px 13px 32px 30px;
+  border-radius: 30px;
+}
+
+@media (max-width: 1400px) {
+  .phone {
+    width: 596.33px;
+    height: 683.81px;
+    margin-right: 39px;
+    margin-top: -62px;
+  }
+}
+
+@media (max-width: 1063px) {
+  .order_demo__inner p {
+    padding-right: 0px;
+  }
+
+  .products__content {
+    display: inline;
+  }
+  .products__content_inner {
+    justify-content: space-around;
+    margin-top: 15px;
+    width: 100%;
+  }
+  .product__content_text {
+    width: 50%;
+  }
+  .product__content_img {
+  }
+}
+
+@media (max-width: 935px) {
+  .order_demo__inner {
+    margin-bottom: 250px;
+  }
+
+  .order_button {
+    text-align: center;
+    width: 343px;
+    height: 52px;
+  }
+
+  .advantage {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -340px;
+  }
+
+  .phone {
+    width: 350px;
+    height: 350px;
+    margin-right: 0px;
+    margin-top: 0px;
+  }
+  .order_demo_wrap {
+    text-align: center;
+    display: inline;
+  }
+  .product__content_img {
+    width: 90px;
+    height: 142px;
+  }
+  .value_for_client {
+    display: inline;
+  }
+  .value_for_client__icon_wrapper {
+    padding-top: 37px;
+  }
+  .value_for_client__icon {
+    width: 70%;
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    padding: 1px 15px 1px 15px;
+  }
+
+  .order_demo__inner {
+    margin-bottom: 350px;
+  }
+  .title_right {
+    font-size: 40px;
+  }
+  .title_left {
+    font-size: 40px;
+  }
+  .order_demo p {
+    font-size: 16px;
+  }
+  .advantage {
+    width: 100%;
+    margin-top: -300px;
+  }
+  .advantage__inner {
+    flex-flow: column-reverse;
+    padding: 0px 11px 16px 18px;
+  }
+  .advantage__inner p {
+    font-size: 14px;
+    line-height: 140%;
+  }
+  .porducts__title {
+    font-size: 19px;
+    line-height: 130%;
+  }
+  .porducts__title span {
+    font-size: 31px;
+    line-height: 130%;
+  }
+  .products__content_inner {
+    padding: 25px 20px 0px 16px;
+  }
+
+  .product__content_text h2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .product__content_text p {
+    font-size: 13px;
+    line-height: 140%;
+  }
+
+  .context_title {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 130%;
+  }
+  .context_title span {
+    font-size: 24px;
+    line-height: 130%;
+  }
+  .value_for_client__context p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .value_for_client__icon_wrapper {
+    row-gap: 21px;
+    column-gap: 15px;
+  }
+
+  .value_for_client__icon {
+    width: 100%;
+    padding: 0px 11px 16px 18px;
+    border-radius: 30px;
+  }
+  .value_for_client__icon p {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}
